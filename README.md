@@ -38,9 +38,9 @@ Assuming that KPI is expressed as a ratio of two cumulative sums, you need:
 Two functions have been implemented.
 
 * `FullPerformanceCurve(df: DataFrame, numColumn: String, denColumn: String, sortColumn: String, xAxisColumn: String)`
-  ** This computes the performance curve for all Rows in your DataFrame. You probably do not want to use this directly as it may involve millions of points in the curve.
+  * This computes the performance curve for all Rows in your DataFrame. You probably do not want to use this directly as it may involve millions of points in the curve.
 * `UniformlySampledPerformanceCurve(df: DataFrame, numColumn: String, denColumn: String, sortColumn: String, xAxisColumn: String, nth: Int)`
-  ** Samples every `nth` point in the full performance curve. Always includes first and last points.
+  * Samples every `nth` point in the full performance curve. Always includes first and last points.
 
 
 
