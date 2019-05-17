@@ -1,9 +1,17 @@
 # Synthetic Lift Measurements with Performance Curves
 
-A simple example that shows a straightforward lift measurement can be
-done by comparing the performance of a campaign to random targeters.
+![Curves for random lift measurement](../random-lift-measurement.png "Random Lift Measurement")
 
-There are a couple of things to note about how this measurement is being
+A simple example that shows a straightforward lift measurement can be
+done by comparing the performance of a campaign to random targeters. The
+measurement is already expressed graphically in th curves above. There is
+a geometrical viewpoint to using Performance Curves, but you can also
+derive a single measure of goodness - KPI at average rank - that can
+be used for numerical comparisons. This README is going to talk only
+about the curves geometrically. A future section will discuss how to
+compute KPI at average rank.
+
+There are a couple of things to note about how the measurement is
 defined:
 
 1. We will be looking at the performance of the campaign in-toto, not just
