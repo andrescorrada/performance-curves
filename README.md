@@ -1,5 +1,4 @@
-# The Performance Curves Research Project: Ad-Tech Measurement
-for Everyone.
+# The Performance Curves Research Project: Ad-Tech Measurement for Everyone.
 
 If ad-tech measurement technology continues to be developed by
 the Big Four, 3rd-party ad-tech has already lost the ad-share war.
