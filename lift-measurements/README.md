@@ -62,3 +62,14 @@ of a god-like figure restricted through your KPI. If an omnipotent
 being was only allowed to use its knowledge of true KPI and nothing
 else to decide how to sort, this curve represents the best they
 could do.
+
+The value of the Oracle Curve is that it measures how much gold
+is in the stream. Sometimes campaigns are asked to do impossible
+things. THere could be very few conversions because the task is
+hard. But be cautious, this is one place where counterfactuals could
+bite you. The reason the task may seem hard is that your campaign
+sucked to find the gold. So the caveat here is that two explanations
+are possible -
+1. This campaign KPI is very hard to optimize.
+2. Your ad-engine is so biased that it is not detecting opportunities
+correctly.
