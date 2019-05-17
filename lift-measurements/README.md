@@ -48,4 +48,17 @@ just the final outcome but how it was reached.
 
 And here we point out one outstanding feature of Performance Curves -
 all comparisons are done on the same data. It is the purest
-apples to apples comparison one can come up with.
+apples to apples comparison one can come up with. All four curves
+are constructed from exactly the same CSV table. The only difference
+between the curves is how that table is sorted and scrambled.
+
+### The Oracle (Orange, Top) Curve
+
+The oracle curve is the curve that you construct by doing the
+cheating experiment. You sort the data by the KPI you are trying
+to maximize. You put the known good stuff at the top, the bad 
+stuff at the bottom. It represents, empirically, the maximum wisdom
+of a god-like figure restricted through your KPI. If an omnipotent 
+being was only allowed to use its knowledge of true KPI and nothing
+else to decide how to sort, this curve represents the best they
+could do.
