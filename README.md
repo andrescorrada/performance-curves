@@ -119,5 +119,12 @@ time explaining to your clients. With Performance Curves you can check
 that you are beating 95% of any possible outcome for a random baseline.
 Client is happy. You are happy.
 
+## How do I contribute?
+
+I'm looking for data scientists that are willing to test Performance Curves
+in its different applications and report back successes or failures of their
+attempted experiments. This is an empirical technique and we may discover
+that it helps in some areas but not in others. Please drop me a line in
+LinkedIn if you are interested in participating in the project.
 
 
