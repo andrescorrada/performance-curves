@@ -1,14 +1,24 @@
 # performance-curves
 
-An alternative way to visualize and measure offline KPI performance.
-This approach was developed in the ad-tech industry where offline
-experiments are an imperfect way to model production systems due to
-the absence of counterfactuals. Instead of the ROC/AUC methodology
-which does not generalize gracefully to tasks other than binary
-classification, performance curves exploit the common case of
+Performance Curves are an alternative way to run synthetic ad-tech
+campaigns on your data, visualize and measure offline KPI performance.
+
+This approach was developed in 2012 at DataXu. In the ad-tech
+industry, experiments are an imperfect way to model production
+systems due to the absence of counterfactuals. Instead of the ROC/AUC
+methodology which does not generalize gracefully to tasks other than
+binary classification, performance curves exploit the common case of
 optimizing for a single KPI (Key Performance Index). This includes
 costs and benefits for a given task and generalizes to any algorithm
-that provides a score for sorting test data.
+that provides a score for sorting test data. For example, you could
+use it to discover buggy stages, like bidders and pacers, in your data
+pipeline
+
+In addition, it uses measurements on unserved ads to make lift measurements that can
+help optimize a campaign. Think of it as Ghost Ads on steroids without the heavy
+statistical baggage associated with it. It exemplifies the quote by John Tukey - 
+> Far better an approximate answer to the right question, which is often vague, than 
+> the exact answer to the wrong question, which can always be made precise."
 
 ## The idea quickly explained
 
@@ -42,6 +52,19 @@ Two functions have been implemented.
 * `UniformlySampledPerformanceCurve(df: DataFrame, numColumn: String, denColumn: String, sortColumn: String, xAxisColumn: String, nth: Int)`
   * Samples every `nth` point in the full performance curve. Always includes first and last points.
 
+## Applications
+
+1. Use it to select better best-of-breed models offline by taking into
+account the KPIs that matter to your clients, not ML/AI metrics that
+do not relate to the costs of your errors.
+2, Compare campaign performance to random and oracle baselines. Is the
+campaign struggling because the task is hard or the strategy is wrong?
+3. Improve the odds deployed campaigns beat any random model, not just
+the average random model. Beating the random model means your model may
+lose to your random baseline. That is not something you want to spend
+time explaining to your clients. With Performance Curves you can check
+that you are beating 95% of any possible outcome for a random baseline.
+Client is happy. You are happy.
 
 
 
