@@ -81,7 +81,9 @@ one.
 * Plot cumulative KPI versus some other cumulative property of the data.
 * Read the "tea leaves" or compare average KPI height for different models/scorers.
 
-That's it.
+That's it. To see how it works in carrying out a lift measurement of a
+campaign relative to an ensemble of random targeters, read this - 
+[lift-measurements](./lift-measurements/README.md)
 
 ## Usage
 
