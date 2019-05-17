@@ -20,6 +20,11 @@ statistical baggage associated with it. It exemplifies the quote by John Tukey -
 > Far better an approximate answer to the right question, which is often vague, than 
 > the exact answer to the wrong question, which can always be made precise."
 
+With it, I have discovered that most deployed models using the AUC/ROC are no better
+than the variance of random models. I have also used it to blame shift from AI/ML models
+to other stages of the ad-serving pipeline. Here is a tongue-in-cheek explanation:
+[The Science of Blame Shifting in Ad-Tech][https://www.linkedin.com/pulse/science-blame-shifting-ad-tech-performance-curves-corrada-emmanuel/]
+
 ## The idea quickly explained
 
 The goal of deploying production systems in ad-tech is often to
