@@ -1,7 +1,49 @@
-# performance-curves
+# The Performance Curves Research Project: Ad-Tech Measurement
+for Everyone.
+
+If ad-tech measurement technology continues to be developed by
+the Big Four, 3rd-party ad-tech has already lost the ad-share war.
+This Open Source research project aims to develop further an
+additional measurement methodology - Performance Curves. Depending
+on who you are, you may like to think of them as either, "Ghost Ads
+on Steroids" or "Naive Ghost Ads".
 
 Performance Curves are an alternative way to run synthetic ad-tech
-campaigns, visualize and measure offline KPI performance.
+campaigns, visualize and measure their KPI performance. All the while
+without spending any additional money. Like Ghost Ads, no actual ads
+are served. You just use your existing campaign data to evaluate
+whatever lift measurement you want to try.
+
+Sound too good to be true? It is. There is an important caveat to them.
+And depending on whether you are an academic scientist or an 
+industrial scientist, this could be a half-empty or half-full situation
+for you. So let's get to the flaw of Performance Curves right away.
+
+## The problem of counterfactuals in ad-tech
+
+Performance Curves allow you to run synthetic campaigns and create all
+sorts of neat lift measurements but they are **incapable** of taking
+into account the effect of counterfactuals.
+
+If you an academic scientist, this is a terrible flaw. "You are claiming
+to do a lift measurement but you do not handle counterfactuals? Huh?"
+
+To an industrial scientist this is not such a bad flaw. What other
+choice do you have? To think that counterfactuals could **possibly**
+affect your lift measurement does not mean that they **actually** are.
+Sometimes the effect you are looking for is so strong that it rises
+above the uncertainty of your lack of knowledge of counterfactuals.
+
+Would you use a measurement methodology that lacked theoretical
+justification? If you answer no, let me ask you - do you use
+Naive Bayes? Ever used it? Performance Curves is the Naive Bayes of
+techniques like Ghost Ads - it assumes the noise of counterfactuals
+is not relevant and treats it like an **empirical** hypothesis
+to be tested. Why suffer analysis paralysis by requiring theoretical
+justifications for the effect of counterfactuals when you can just 
+deploy an experiment today to test the hypothesis empirically?
+
+## History
 
 This approach was developed in 2012 at DataXu. In the ad-tech
 industry, experiments are an imperfect way to model production
