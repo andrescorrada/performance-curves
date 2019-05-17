@@ -1,7 +1,7 @@
 # The Performance Curves Research Project: Ad-Tech Measurement for Everyone.
 
 If ad-tech measurement technology continues to be developed by
-the Big Four, 3rd-party ad-tech has already lost the ad-share war.
+the Big Four only, 3rd-party companies have already lost the ad-share war.
 This Open Source research project aims to develop further an
 additional measurement methodology - Performance Curves. Depending
 on who you are, you may like to think of them as either, "Ghost Ads
