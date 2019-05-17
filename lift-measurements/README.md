@@ -33,3 +33,19 @@ whatever percentile you want to make sure that your campaign beats
 the random baseline the first time, the 2nd time. You pay for this
 convenience by demanding more from your models. But isn't that the
 point of innovation?
+
+## The curves
+
+Each curve represents a synthetic campaign. This conceptual sleight
+of hand is achieved by asserting that sorting according to an
+evaluators score is equivalent to running the campaign the way they
+would like to run it. It puts what they think is cream first.
+
+You may not like this vague metaphorical assertion at this point,
+but in the end it will not matter because you will see that ranking
+the data by each evaluator is the sensible way to understand not
+just the final outcome but how it was reached.
+
+And here we point out one outstanding feature of Performance Curves -
+all comparisons are done on the same data. It is the purest
+apples to apples comparison one can come up with.
