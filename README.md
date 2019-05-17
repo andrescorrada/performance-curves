@@ -24,7 +24,7 @@ Performance Curves allow you to run synthetic campaigns and create all
 sorts of neat lift measurements but they are **incapable** of taking
 into account the effect of counterfactuals.
 
-If you an academic scientist, this is a terrible flaw. "You are claiming
+If you are an academic scientist, this is a terrible flaw. "You are claiming
 to do a lift measurement but you do not handle counterfactuals? Huh?"
 
 To an industrial scientist this is not such a bad flaw. What other
@@ -64,7 +64,7 @@ statistical baggage associated with it. It exemplifies the quote by John Tukey -
 With it, I have discovered that most deployed models using the AUC/ROC are no better
 than the variance of random models. I have also used it to blame shift from AI/ML models
 to other stages of the ad-serving pipeline. Here is a tongue-in-cheek explanation:
-[The Science of Blame Shifting in Ad-Tech][https://www.linkedin.com/pulse/science-blame-shifting-ad-tech-performance-curves-corrada-emmanuel/]
+[The Science of Blame Shifting in Ad-Tech]: https://www.linkedin.com/pulse/science-blame-shifting-ad-tech-performance-curves-corrada-emmanuel/
 
 ## The idea quickly explained
 
