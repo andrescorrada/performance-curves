@@ -1,5 +1,7 @@
 # The Performance Curves Research Project: Ad-Tech Measurement for Everyone.
 
+![Curves for random lift measurement](./random-lift-measurement.png "Random Lift Measurement")
+
 If ad-tech measurement technology continues to be developed by
 the Big Four only, 3rd-party companies have already lost the ad-share war.
 This Open Source research project aims to develop further an
