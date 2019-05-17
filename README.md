@@ -1,7 +1,7 @@
 # performance-curves
 
 Performance Curves are an alternative way to run synthetic ad-tech
-campaigns on your data, visualize and measure offline KPI performance.
+campaigns, visualize and measure offline KPI performance.
 
 This approach was developed in 2012 at DataXu. In the ad-tech
 industry, experiments are an imperfect way to model production
@@ -37,11 +37,18 @@ That's it.
 
 ## Usage
 
-Assuming that KPI is expressed as a ratio of two cumulative sums, you need:
-* Sorting variable: A score that can be sorted descending (most common case).
-* Numerator variable: For example, if you are interested in CPA (cost per action), you can invert it as (actions per cost) and use as the numerator the actions. This could be an indicator function or some positive integer.
-* Denominator variable: In the case of CPA it would be cost per attempt.
-* xAxis variable: You could choose the x-axis to acumulate by total attempts (views).
+Assuming that KPI is expressed as a ratio of two cumulative sums, you
+need: 
+* Sorting variable: A score that can be sorted descending (most
+common case). 
+* Numerator variable: For example, if you are interested
+in CPA (cost per action), you can invert it as (actions per cost) and
+use as the numerator the actions. This could be an indicator function
+or some positive integer. 
+* Denominator variable: In the case of CPA
+it would be cost per attempt. 
+* xAxis variable: You could choose the
+x-axis to acumulate by total attempts (views).
 
 ### Scala/Spark
 
@@ -59,7 +66,7 @@ account the KPIs that matter to your clients, not ML/AI metrics that
 do not relate to the costs of your errors.
 2, Compare campaign performance to random and oracle baselines. Is the
 campaign struggling because the task is hard or the strategy is wrong?
-3. Improve the odds deployed campaigns beat any random model, not just
+3. Improve the odds that deployed campaigns beat any random baseline, not just
 the average random model. Beating the random model means your model may
 lose to your random baseline. That is not something you want to spend
 time explaining to your clients. With Performance Curves you can check
