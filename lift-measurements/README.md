@@ -34,7 +34,7 @@ the random baseline the first time, the 2nd time. You pay for this
 convenience by demanding more from your models. But isn't that the
 point of innovation?
 
-## The curves
+## The Curves
 
 Each curve represents a synthetic campaign. This conceptual sleight
 of hand is achieved by asserting that sorting according to an
@@ -52,7 +52,7 @@ apples to apples comparison one can come up with. All four curves
 are constructed from exactly the same CSV table. The only difference
 between the curves is how that table is sorted and scrambled.
 
-### The Oracle (Orange, Top) Curve
+### The oracle (orange, top) curve
 
 The oracle curve is the curve that you construct by doing the
 cheating experiment. You sort the data by the KPI you are trying
@@ -73,3 +73,81 @@ are possible -
 1. This campaign KPI is very hard to optimize.
 2. Your ad-engine is so biased that it is not detecting opportunities
 correctly.
+
+Implicitly, this curve is also defining the direction of improvement
+in the plot. In this case, being higher is better (closer to the
+oracle curve).
+
+### The curves for the two production stages
+
+The green and blue curves are two stages in the ad-serving pipeline
+that actually served ads during the campaign. But not that they
+are only part of the full pipeline. These ML stages, like most industrial
+data pipelines do not have "bite". They advise but do not decide.
+
+Here we see that the green stage is healthy and the blue stage is sick.
+It is sick because its highest scoring decisions are no better than
+random targeters (the red curves). We explain those curves next.
+
+### The curves for the ensemble of random targeters
+
+The two red curves in the plot are the envelopes that encompass the
+possible performance of 95% of the random targeters.
+
+A single random targeter synthetic campaign is randomly shuffling the
+campaign data table. The envelope (the two red curves) is constructed
+by identifying the 2.5 and 97.5 percentiles at each point for an
+ensemble of many such random shuffles.
+
+As we mentioned before, this is the synthetic baseline for this campaign.
+This plot answers the question - "Is this stage in the ad-serving
+pipeline better than most random targeters?" As you can see, the blue
+stage stumbles out of the gate. It ranks highest views that actually
+were some of the worst performers.
+
+Here is where the academic criticism of Performance Curves has been
+most silly. I've utilized this synthetic random lift measurement many times.
+I've done it in companies where the empirical random targeter baseline
+kept beating the campaign itself to the consternation of everyone. Using
+this measurement I was able to diagnose the problem and repeatedly fix
+it. In the process I discovered that most deployed models where no
+better than random guessers at the beginning.
+
+## The counterfactual problem with the random synthetic lift measurement
+
+The response to the continued empirical success with this lift measurement
+has ranged from:
+1. You don't have counterfactuals, this plot is irrelevant.
+2. Don't you think you are being harsh requiring that the model be above
+the 95 percentile?
+
+The above comments came from academics at Harvard and MIT. The empirical
+success of this method to repeatedly discover sick stages by comparing
+them to random targeters appears to be irrelevant. The possibility
+existed in all of those measurements that you could be deceived by lack
+of knowledge of counterfactuals. If you are an industrial scientist you see
+how silly this is. The **possibility** that we may be missing important
+information from counterfactuals is not an **actuality** that we are in
+a specific case.
+
+The counterfactual argument here could be something like-
+> You don't know if a synthetic campaign you trace in your plot
+> would actually obtain the data you are using in this comparison.
+> It could be that the blue sick stage, is actually okay. The other
+> stages are the ones that are sick, for example. They biased
+> the data collection and selected data that makes the blue one
+> look sick at the beginning.
+
+True. But I ask from industrial scientists, how often do well-engineered
+systems break down in 5 stages at the same time versus 1? The correct
+way to treat Performance Curves is to view them as generators of
+experimental tests. To provide to you, the industrial scientist, a
+tool that can find where your system is under-performing. In that
+world, the lack of counterfactual knowledge should not lead to
+analysis paralysis. You **can** perform the experiment to test
+in production, serving actual ads, if the conclusion you reach with
+this measurement is correct or not.
+
+
+
+
