@@ -121,14 +121,12 @@ has ranged from:
 2. Don't you think you are being harsh requiring that the model be above
 the 95 percentile?
 
-The above comments came from academics at Harvard and MIT. The empirical
-success of this method to repeatedly discover sick stages by comparing
-them to random targeters appears to be irrelevant. The possibility
-existed in all of those measurements that you could be deceived by lack
-of knowledge of counterfactuals. If you are an industrial scientist you see
-how silly this is. The **possibility** that we may be missing important
-information from counterfactuals is not an **actuality** that we are in
-a specific case.
+The possibility existed in all of those measurements that you could be
+deceived by lack of knowledge of counterfactuals. If you are an
+industrial scientist you see how silly this objection is. The
+**possibility** that we may be missing important information from
+counterfactuals is not an **actuality** that we are in a specific
+case.
 
 The counterfactual argument here could be something like-
 > You don't know if a synthetic campaign you trace in your plot
@@ -141,12 +139,24 @@ The counterfactual argument here could be something like-
 True. But I ask from industrial scientists, how often do well-engineered
 systems break down in 5 stages at the same time versus 1? The correct
 way to treat Performance Curves is to view them as generators of
-experimental tests. To provide to you, the industrial scientist, a
+experimental tests. They provide to you, the industrial scientist, a
 tool that can find where your system is under-performing. In that
 world, the lack of counterfactual knowledge should not lead to
 analysis paralysis. You **can** perform the experiment to test
 in production, serving actual ads, if the conclusion you reach with
 this measurement is correct or not.
+
+### Empirical verification
+
+One of the goals of this project is to start a repository of successful
+and failed experiments using the Performance Curves methodology. In
+future update I'll present a "before" and "after" pair of plots that
+may serve well as an initial format for "documenting" the experiments.
+
+One advantage of the plots as documentation is that they lend themselves
+to numerical obfuscation so that proprietary information is not made
+public. An example on one such plot is the one above. It deliberately
+avoids detailing the KPI (vATR1K = view action rate per 1000)
 
 
 
