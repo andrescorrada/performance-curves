@@ -57,3 +57,25 @@ If the noise of counterfactuals was so strong, how come B came up
 every day for the last two weeks? Doesn't that seem like a good
 hypothesis to test with an actual A/B test?
 
+## Limitations
+
+One limitation of Ghost A/B Testing is that you cannot test internal
+states that you cannot calculate offline. Examples of this in ad-tech
+would be bidder or pacer settings. Ad-servining engines typically do
+a bad job of saving such internal state. Funnily, the business rules
+dominate the buys, but the ML components get the most documentation
+of internal state with things like feature values, model score, etc.
+
+The community solution is that ad-tech engines need to expend money
+to develop their internal state documentation of all business rules
+that affect buy decisions. Doesn't that sound obvious when you say it
+out loud? Why are ad-engines not saving operator changes that control
+the way buys are done? If they did, they could use Ghost A/B Testing
+to improve it.
+
+They could show that the operator was changing the bidder so as to
+work against campaign KPIs. The leanest, most efficient ad-serving
+engines invest in internal state documentation so they can offload
+A/B testing from their client's. The more internal state documentation
+you have of everything that affects your buys - the better you will
+be able to use Ghost A/B Testing to optimize your ad-serving engine.
